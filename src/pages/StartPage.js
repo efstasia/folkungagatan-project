@@ -2,7 +2,7 @@ import React from 'react';
 
 export const StartPage = () => {
   return (
-    <div>
+    <div className='start-page-container'>
       <p className='start-page-text'>
         Välkommen till ett personligare och smidigare sätt att köpa trycksaker,
         skyltar och profilreklam med allt som hör till som formgivning, montage,

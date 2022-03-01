@@ -13,8 +13,8 @@ code {
 }
 
 .nav-bar-container {
-  width: 100%;
-  background: #161616;
+  /* width: 100%;
+  background: #161616; */
 }
 
 .nav-bar {
@@ -24,6 +24,11 @@ code {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   padding: 8px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background: #161616;
 }
 
 .nav-bar-buttons {
@@ -61,8 +66,9 @@ h1 {
   /* background-image: url('./images/headerImage.jpg');
   object-fit: cover;
   background-repeat: no-repeat; */
-  height: 400px;
+  height: 600px;
   position: relative;
+  margin-bottom: 50px;
 }
 
 .header-image {
@@ -71,6 +77,7 @@ h1 {
   object-fit: cover;
   filter: blur(1px) brightness(65%);
   position: relative;
+  padding: 90px 0;
 }
 
 h2 {
@@ -90,11 +97,13 @@ h2 {
   width: 50%;
   text-align: center;
   margin: 50px auto 10px auto;
+  padding: 50px 0;
 }
 
 .start-page-text {
   font-size: 2rem;
   font-family: 'Roboto Mono', monospace;
+  padding-top: 150px;
 }
 
 .start-page-link-container {

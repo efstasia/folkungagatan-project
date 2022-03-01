@@ -7,7 +7,7 @@ export const Header = ({ theme, themeToggler }) => {
     <header>
       <div className='nav-bar-container'>
         <nav className='nav-bar'>
-          <h1>folkunagatan.com</h1>
+          <h1>folkungagatan.com</h1>
           <div className='nav-bar-buttons'>
             <a href='/'>Hem</a>
             <a href='/projekt'>Tidigare projekt</a>
@@ -21,7 +21,7 @@ export const Header = ({ theme, themeToggler }) => {
       </div>
 
       <div className='header-image-container'>
-        <h2>BEST PLACE ON EARTH</h2>
+        {/* <h2>BEST PLACE ON EARTH</h2> */}
         <img className='header-image' src={image} alt='printer' />
       </div>
     </header>
