@@ -8,8 +8,12 @@ import { useDarkMode } from './components/UseDarkMode';
 import { Header } from './components/Header';
 import { StartPage } from './pages/StartPage';
 import { Projects } from './pages/Projects';
+import { Costumers } from './pages/Costumers';
+import { Contact } from './pages/Contact';
+import { Enviroment } from './pages/Enviroment';
 import { About } from './pages/About';
-import Toggle from './components/Toggler';
+import { Footer } from './components/Footer';
+// import Toggle from './components/Toggler';
 
 const App = () => {
   const [theme, themeToggler] = useDarkMode();
@@ -18,18 +22,22 @@ const App = () => {
 
   return (
     <>
-      <Header />
       <ThemeProvider theme={themeMode} themeToggler={themeToggler}>
+        <Header theme={theme} themeToggler={themeToggler} />
         <GlobalStyles />
-        <Toggle theme={theme} toggleTheme={themeToggler} />
+        {/* <Toggle theme={theme} toggleTheme={themeToggler} /> */}
 
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<StartPage />} />
             <Route path='/projekt' element={<Projects />} />
-            <Route path='/about' element={<About />} />
+            <Route path='/omoss' element={<About />} />
+            <Route path='/kontakt' element={<Contact />} />
+            <Route path='/miljö' element={<Enviroment />} />
+            <Route path='/kunder' element={<Costumers />} />
           </Routes>
         </BrowserRouter>
+        {/* <Footer /> */}
       </ThemeProvider>
     </>
   );

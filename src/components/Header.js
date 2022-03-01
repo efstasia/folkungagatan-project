@@ -1,15 +1,29 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import image from '../images/headerImage.jpg';
+import Toggle from './Toggler';
 
-export const Header = () => {
+export const Header = ({ theme, themeToggler }) => {
   return (
-    <div>
-      <h1>HEADER</h1>
-      <nav>
-        <a href='/'>home</a>
-        <a href='/projekt'>earlier projects</a>
-        <a href='/about'>about</a>
-      </nav>
-    </div>
+    <header>
+      <div className='nav-bar-container'>
+        <nav className='nav-bar'>
+          <h1>folkunagatan.com</h1>
+          <div className='nav-bar-buttons'>
+            <a href='/'>Hem</a>
+            <a href='/projekt'>Tidigare projekt</a>
+            <a href='/kontakt'>Kontakt</a>
+            <a href='/om-oss'>Vad vi gör</a>
+            <a href='/kunder'>Vad säger kunderna</a>
+            <a href='/miljö'>Miljö</a>
+            <Toggle theme={theme} toggleTheme={themeToggler} />
+          </div>
+        </nav>
+      </div>
+
+      <div className='header-image-container'>
+        <h2>BEST PLACE ON EARTH</h2>
+        <img className='header-image' src={image} alt='printer' />
+      </div>
+    </header>
   );
 };
