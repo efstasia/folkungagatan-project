@@ -12,6 +12,7 @@ import { Costumers } from './pages/Costumers';
 import { Contact } from './pages/Contact';
 import { Enviroment } from './pages/Enviroment';
 import { About } from './pages/About';
+import { SpecificProject } from './pages/SpecificProject';
 import { Footer } from './components/Footer';
 // import Toggle from './components/Toggler';
 
@@ -31,10 +32,11 @@ const App = () => {
           <Routes>
             <Route path='/' element={<StartPage />} />
             <Route path='/projekt' element={<Projects />} />
-            <Route path='/omoss' element={<About />} />
+            <Route path='/om-oss' element={<About />} />
             <Route path='/kontakt' element={<Contact />} />
             <Route path='/miljö' element={<Enviroment />} />
             <Route path='/kunder' element={<Costumers />} />
+            <Route path='/projekt/:id' element={<SpecificProject />} />
           </Routes>
         </BrowserRouter>
         {/* <Footer /> */}

@@ -5,6 +5,7 @@ import placeholder1 from '../images/placeholder1.png';
 import placeholder2 from '../images/placeholder2.png';
 import placeholder3 from '../images/placeholder3.png';
 import placeholder4 from '../images/placeholder4.png';
+import { SpecificProject } from './SpecificProject';
 
 export const Projects = () => {
   return (
@@ -28,7 +29,10 @@ export const Projects = () => {
         </div>
         <div className='image-container'>
           <img src={placeholder2} alt='placeholder2' className='sliderimg' />
-          <p>text om projekt</p>
+
+          <a href='/projekt/:id'>
+            <p>text om projekt LÄNK TILL FLER BILDER</p>
+          </a>
         </div>
         <div className='image-container'>
           <img src={placeholder3} alt='placeholder3' className='sliderimg' />
